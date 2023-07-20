@@ -1,0 +1,901 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: black;
+    color: white;
+}
+
+#Home {
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    background-image: url(img/bg.png);
+    background-position: center;
+    position: relative;
+    top: 0%;
+}
+
+.logo {
+    width: 100px;
+    margin-right: 155px;
+}
+
+nav {
+    background: black;
+    top: 0;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* .container{
+    padding:20px 20px;
+    margin: 20px 30px;
+} */
+
+.fa-solid {
+    padding: 56px 10px;
+    opacity: 0.25;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    font-size: 18px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+nav ul li a::after {
+
+    width: 0;
+    left: 0;
+    bottom: -6px;
+    position: absolute;
+    transition: 0.5s;
+    content: '';
+    background: rgb(34, 201, 12);
+    height: 3px;
+}
+
+nav ul li a:hover::after {
+     width: 100%;
+   background: greenyellow;
+}
+
+nav ul li a:hover {
+    color: rgb(61, 94, 11);
+}
+
+/* about */
+.container h3 {
+    color: greenyellow;
+    text-align: center;
+    font-size: 30px;
+    font-size: 15px;
+    font-style: italic;
+    margin-top: 25px;
+}
+
+.container h1 {
+    font-style: normal;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 16px;
+    padding: 25px;
+}
+
+.images {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.images img {
+    width: 150px;
+    margin: 10px;
+    display: block;
+}
+
+.text-img .first img {
+    width: 100px;
+}
+
+.text-img .second img {
+    width: 100px;
+}
+
+.first p span {
+    font-weight: bold;
+    font-size: 18px;
+    color: yellowgreen;
+}
+
+.second p span {
+    font-weight: bold;
+    font-size: 18px;
+    color: yellowgreen;
+}
+
+/* product */
+.product{
+    margin: 100px 20px;
+    padding: 20px 20px;
+}
+.product .mid .front{
+    margin: 10px 10px;
+    padding: 40px 40px;
+}
+.product h4{
+    color: yellowgreen;
+    text-align: center;
+    font-style: italic;
+    
+}
+.product h1{
+    text-align: center;
+    font-family: emoji;
+}
+.product nav ul{
+    margin: 50px 0px;
+}
+.product img{
+width: 250px;
+}
+.product h5{
+    color: yellowgreen;
+    text-align: center;
+    margin-right: 9px;
+}
+.product p{
+    margin-left: 31px;
+    font-size: 15px;
+}
+
+/* footer */
+.copyright {
+    width: 100%;
+    /* text-align: center; */
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    /* margin-top: 20px; */
+    bottom: 0%;
+    position: relative;
+}
+
+.footer {
+    width: 100%;
+}
+
+.copyright span {
+    color: yellowgreen;
+    font-weight: bold;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* contact */
+#contact {
+    padding: 20px 20px;
+    margin: 20px 30px;
+}
+
+.top h4 {
+    font-style: italic;
+    margin-top: -100px;
+    text-align: center;
+    color: yellowgreen;
+}
+
+.top h1 {
+    font-family: emoji;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.line {
+    width: 40%;
+    text-align: center;
+    padding: 10px 10px;
+    margin-left: 280px;
+}
+
+.line .hr {
+    color: yellowgreen;
+    border: dotted;
+}
+
+nav .fa-solid {
+    font-size: 44px;
+    color: yellowgreen;
+    padding: 25px 41px;
+    margin: 5px;
+}
+
+.contact-textform nav .li1 {
+    width: 40%;
+}
+
+.contact-textform nav .li2 {
+    width: 40%;
+    margin-top: 80px;
+}
+
+.contact-textform h2 {
+    font-family: cursive;
+    margin-bottom: 20px;
+}
+
+.contact-textform nav p {
+    font-style: italic;
+}
+
+.contact-textform span {
+    color: yellowgreen;
+    cursor: pointer;
+    font-style: normal;
+}
+
+form input,
+form textarea {
+    border: 0;
+    outline: none;
+    padding: 3px 10px;
+    margin: 6px 20px;
+    color: black;
+    font-size: 15px;
+    border-radius: 6px;
+}
+
+form .btn2 {
+    padding: 8px 41px;
+    font-size: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 10px 60px;
+    background: yellowgreen;
+}
+
+.contact-box nav {
+    background: #262424b0;
+    padding: 20px 0px;
+}
+
+.contact-box nav .three {
+    margin-bottom: auto;
+}
+
+.contact-box nav .three span {
+    font-family: unset;
+    color: darkgray;
+    font-weight: 900;
+}
+
+.contact-box nav .three p {
+    text-align: -webkit-center;
+    margin: 30px 0;
+}
+
+.contact-box nav i {
+    font-size: 20px;
+    padding-left: 0px;
+}
+
+.contact-box nav span {
+    padding-left: 0px;
+
+}
+
+.contact-box nav h3 {
+    color: yellowgreen;
+}
+
+.contact-box nav ul li a:hover {
+    background: greenyellow;
+    width: 50%;
+} 
+.contact-box nav ul li a::after {
+    width: 0;
+    left: 10px;
+    bottom: -6px;
+    position: absolute;
+    transition: 0.5s;
+    content: '';
+    background: rgb(34, 201, 12);
+    height: 3px;
+}
+.last .fas {
+    display: none;
+}
+@media screen and (max-width: 376px){
+    /* navbar */
+     .last .fas {
+        display: block;
+        font-size: 25px;
+    }
+
+    .last ul {
+        background: #020101;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        padding-top: 50px;
+        position: fixed;
+        height: 100vh;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    .last ul li {
+        margin: 25px;
+        display: block;
+    }
+
+    .last ul .fas {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    } 
+
+    /* contact */
+    #contact {
+        padding: 20px 20px;
+        margin: 20px 30px;
+    }
+    
+    .top h4 {
+        font-style: italic;
+        margin-top: 5px;
+        color: yellowgreen;
+        text-align: center;
+    }
+    
+    .top h1 {
+        font-family: emoji;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 25px;
+    }
+    
+    .line {
+        width: 40%;
+        text-align: center;
+        padding: 10px 10px;
+        margin-left: 280px;
+    }
+    
+    .line .hr {
+        color: yellowgreen;
+        border: dotted;
+    }
+    
+    nav .fa-solid {
+        font-size: 25px;
+        color: yellowgreen;
+        padding: 25px 41px;
+        /* margin: 5px; */
+        margin-left: 29px;
+    }
+    
+    .contact-textform nav .li1 {
+        width: 100%;
+    }
+    
+    .contact-textform nav .li2 {
+        width: 100%;
+        margin-top: 8px;
+    }
+    
+    .contact-textform h2 {
+        font-family: cursive;
+        margin-bottom: 20px;
+    }
+    
+    .contact-textform nav p {
+        font-style: italic;
+    }
+    
+    .contact-textform span {
+        color: yellowgreen;
+        cursor: pointer;
+        font-style: normal;
+    }
+    
+    form input,
+    form textarea {
+        border: 0;
+        outline: none;
+        padding: 3px 10px;
+        margin: 6px 20px;
+        color: black;
+        font-size: 15px;
+        border-radius: 6px;
+    }
+    
+    form .btn2 {
+        padding: 8px 41px;
+        font-size: 15px;
+        border-radius: 20px;
+        cursor: pointer;
+        margin: 10px 60px;
+        background: yellowgreen;
+    }
+    
+    .contact-box nav {
+        background: #262424b0;
+        padding: 20px 0px;
+    }
+    
+    .contact-box nav .three {
+        margin-bottom: auto;
+        margin-left: 34px;
+    }
+    
+    .contact-box nav .three span {
+        font-family: unset;
+        color: darkgray;
+        font-weight: 900;
+    }
+    
+    .contact-box nav .three p {
+        text-align: -webkit-center;
+        margin: 30px 0;
+    }
+    .contact-box nav .three h3{
+margin-left: -31px;
+    }
+    .contact-box nav .three p{
+text-align:  revert;
+    }
+    
+    .contact-box nav i {
+        font-size: 20px;
+    padding-left: -3px;
+    padding-right: 10px;
+    }
+    
+    .contact-box nav span {
+        padding-left: 0px;
+    
+    }
+    
+    .contact-box nav h3 {
+        color: yellowgreen;
+    }
+  .contact-box  nav ul li a {
+        color: white;
+        text-decoration: none;
+        position: relative;
+        font-size: 15px;
+        left: -3px;
+    }
+    .contact-box  nav ul li a:hover{
+    color: yellowgreen;
+    }
+    .contact-box .two a{
+        left: -52px;
+    }
+    .contact-box .two h3{
+        margin-left: -50px;
+    }
+    .copyright {
+        width: 100%;
+        /* text-align: center; */
+        padding: 25px 0;
+        background: #262626;
+        font-weight: 300;
+        /* margin-top: 20px; */
+        bottom: 0%;
+        position: relative;
+    }
+    
+    .copyright span {
+        color: yellowgreen;
+        font-weight: bold;
+    }
+    
+    .copyright {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .copyright p{
+       font-size:10px ;
+    }
+    
+    .footer .copyright {
+        width: 100%;
+        padding: 10px;
+    }
+     /* about */
+     .container h3{
+        color: greenyellow;
+        text-align: center;
+        font-size: 15px;
+        margin-top: 15px;
+    }
+    .container h1{
+        font-style: normal;
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 16px;
+        padding: 25px;
+        font-size: 30px;
+    }
+    .images{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .images img{
+        width: 140px;
+        margin: 10px;
+        display: block;
+    }
+    .text-img .first img{
+    width: 100px;
+    }
+    .text-img .second img{
+    width: 100px;
+    }
+    .first p span{
+        font-weight: bold;
+        font-size: 18px;
+        color: yellowgreen;
+    }
+    .first p{
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+    .second p span{
+        font-weight: bold;
+        font-size: 18px;
+        color: yellowgreen;
+    }
+    .second p{
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+    /* porduct */
+    .product{
+        margin: 0px 20px;
+        padding: 20px 20px;
+    }
+    .product .mid .front{
+        margin: 10px 10px;
+        padding: 40px 40px;
+    }
+    .product h4{
+        color: yellowgreen;
+        text-align: center;
+    }
+    .product h1{
+        text-align: center;
+        font-family: emoji;
+        font-size: 25px;
+        margin-top: 15px;
+    }
+    .product nav ul{
+        margin: 5px 0px;
+    }
+    .product img{
+    width: 250px;
+    }
+    .product h5{
+        color: yellowgreen;
+        text-align: center;
+        margin-right: 9px;
+    }
+    .product p{
+        margin-left: 31px;
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 600px){
+    /* navbar */
+     .last .fas {
+        display: block;
+        font-size: 25px;
+    }
+
+    .last ul {
+        background: #020101;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        padding-top: 50px;
+        position: fixed;
+        height: 100vh;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    .last ul li {
+        margin: 25px;
+        display: block;
+    }
+
+    .last ul .fas {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    } 
+    /* contact */
+    #contact {
+        padding: 20px 20px;
+        margin: 20px 30px;
+    }
+    
+    .top h4 {
+        font-style: italic;
+        margin-top: 5px;
+        color: yellowgreen;
+        text-align: center;
+    }
+    
+    .top h1 {
+        font-family: emoji;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 25px;
+    }
+    
+    .line {
+        width: 40%;
+        text-align: center;
+        padding: 10px 10px;
+        margin-left: 280px;
+    }
+    
+    .line .hr {
+        color: yellowgreen;
+        border: dotted;
+    }
+    
+    nav .fa-solid {
+        font-size: 25px;
+        color: yellowgreen;
+        padding: 25px 41px;
+        /* margin: 5px; */
+        margin-left: 29px;
+    }
+    
+    .contact-textform nav .li1 {
+        width: 100%;
+    }
+    
+    .contact-textform nav .li2 {
+        width: 100%;
+        margin-top: 8px;
+    }
+    
+    .contact-textform h2 {
+        font-family: cursive;
+        margin-bottom: 20px;
+    }
+    
+    .contact-textform nav p {
+        font-style: italic;
+    }
+    
+    .contact-textform span {
+        color: yellowgreen;
+        cursor: pointer;
+        font-style: normal;
+    }
+    
+    form input,
+    form textarea {
+        border: 0;
+        outline: none;
+        padding: 3px 10px;
+        margin: 6px 20px;
+        color: black;
+        font-size: 15px;
+        border-radius: 6px;
+    }
+    
+    form .btn2 {
+        padding: 8px 41px;
+        font-size: 15px;
+        border-radius: 20px;
+        cursor: pointer;
+        margin: 10px 60px;
+        background: yellowgreen;
+    }
+    
+    .contact-box nav {
+        background: #262424b0;
+        padding: 20px 0px;
+    }
+    
+    .contact-box nav .three {
+        margin-bottom: auto;
+        margin-left: 34px;
+    }
+    
+    .contact-box nav .three span {
+        font-family: unset;
+        color: darkgray;
+        font-weight: 900;
+    }
+    
+    .contact-box nav .three p {
+        text-align: -webkit-center;
+        margin: 30px 0;
+    }
+    .contact-box nav .three h3{
+margin-left: -31px;
+    }
+    .contact-box nav .three p{
+text-align:  revert;
+    }
+    
+    .contact-box nav i {
+        font-size: 20px;
+    padding-left: -3px;
+    padding-right: 10px;
+    }
+    
+    .contact-box nav span {
+        padding-left: 0px;
+    
+    }
+    
+    .contact-box nav h3 {
+        color: yellowgreen;
+    }
+  .contact-box  nav ul li a {
+        color: white;
+        text-decoration: none;
+        position: relative;
+        font-size: 15px;
+        left: -3px;
+    }
+    .contact-box  nav ul li a:hover{
+    color: yellowgreen;
+    }
+    .contact-box .two a{
+        left: -52px;
+    }
+    .contact-box .two h3{
+        margin-left: -50px;
+    }
+    .copyright {
+        width: 100%;
+        /* text-align: center; */
+        padding: 25px 0;
+        background: #262626;
+        font-weight: 300;
+        /* margin-top: 20px; */
+        bottom: 0%;
+        position: relative;
+    }
+    
+    .copyright span {
+        color: yellowgreen;
+        font-weight: bold;
+    }
+    
+    .copyright {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .copyright p{
+       font-size:10px ;
+    }
+    
+    .footer .copyright {
+        width: 100%;
+        padding: 10px;
+    }
+     /* about */
+     .container h3{
+        color: greenyellow;
+        text-align: center;
+        font-size: 15px;
+        margin-top: 15px;
+    }
+    .container h1{
+        font-style: normal;
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 16px;
+        padding: 25px;
+        font-size: 30px;
+    }
+    .images{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .images img{
+        width: 140px;
+        margin: 10px;
+        display: block;
+    }
+    .text-img .first img{
+    width: 100px;
+    }
+    .text-img .second img{
+    width: 100px;
+    }
+    .first p span{
+        font-weight: bold;
+        font-size: 18px;
+        color: yellowgreen;
+    }
+    .first p{
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+    .second p span{
+        font-weight: bold;
+        font-size: 18px;
+        color: yellowgreen;
+    }
+    .second p{
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+    /* porduct */
+    .product{
+        margin: 0px 20px;
+        padding: 20px 20px;
+    }
+    .product .mid .front{
+        margin: 10px 10px;
+        padding: 40px 40px;
+    }
+    .product h4{
+        color: yellowgreen;
+        text-align: center;
+    }
+    .product h1{
+        text-align: center;
+        font-family: emoji;
+        font-size: 25px;
+        margin-top: 15px;
+    }
+    .product nav ul{
+        margin: 5px 0px;
+    }
+    .product img{
+    width: 250px;
+    }
+    .product h5{
+        color: yellowgreen;
+        text-align: center;
+        margin-right: 9px;
+    }
+    .product p{
+        margin-left: 31px;
+        font-size: 15px;
+    }
+}

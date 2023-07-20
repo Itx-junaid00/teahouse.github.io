@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://kit.fontawesome.com/293c5fd9e5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="nav">
+        <div class="container">
+            <div>
+                <nav class="last" >
+                    <img src="img/logo.png" class="logo">
+                    <ul id="navbar">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/product.html">Product</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                        <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div id="Home"></div>
+      <!-- contacts -->
+      <div id="contact">
+        <div class="top">
+            <h4>Contact us</h4>
+            <h1>If You Have Any Query,<br> Please Contact Us</h1>
+        </div>
+    </div>
+    <div class="navend">
+        <nav>
+            <ul>
+                <li>
+                    <p><i class="fa-solid fa-square-envelope"></i><br>info@example.com <br>support@example.com
+                    </p>
+                </li>
+                <li>
+                    <p><i class="fa-solid fa-phone"></i> <br>+012 345 67890 <br> +012 345 67890</p>
+                </li>
+                <li>
+                    <p><i class="fa-solid fa-location-dot"></i><br>123 Street <br> New York, USA</p>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="contact-textform">
+        <nav>
+            <ul>
+                <li class="li1">
+                    <h2>Need a functional contact form?</h2>
+                    <p>The contact form is currently inactive. Get a functional and working contact form with
+                        Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're
+                        done. <span> Download Now.</span></p>
+                </li>
+                <li class="li2">
+                    <form>
+                        <input type="text" name="Name" placeholder="Enter here" required>
+                        <input type="email" name="Email" placeholder="email" required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="contact-box">
+        <nav>
+            <ul>
+                <li class="one">
+                    <h3>Our Office</h3>
+                    <p><i class="fa-solid fa-square-envelope"></i><span>info@example.com</span></p>
+                    <p><i class="fa-solid fa-phone"></i><span>+012 345 67890</span></p>
+                    <p><i class="fa-solid fa-location-dot"></i><span>123 Street New York, USA</span> </p>
+                </li>
+                <li class="two">
+                    <h3>Quick Links</h3>
+                    <a href="#">
+                        <p><i class="fa-solid fa-angle-right"></i><span>About us</span></p>
+                    </a>
+                    <a href="#">
+                        <p><i class="fa-solid fa-angle-right"></i><span>Contact us</span></p>
+                    </a>
+                    <a href="#">
+                        <p><i class="fa-solid fa-angle-right"></i><span>Our Services</span></p>
+                    </a>
+                </li>
+                <li class="three">
+                    <h3>Business Hours</h3>
+                    <p>
+                        Monday - Friday
+                        <br>
+                        <span>09:00 am - 07:00 pm</span>
+                        <br>
+                        Saturday
+                        <br>
+                        <span>09:00 am - 12:00 pm</span>
+                        <br>
+                        Sunday
+                        <br>
+                        <span>Closed</span>
+                    </p>
+                </li>
+            </ul>
+        </nav>
+    </div>
+       <!-- footer -->
+       <div class="footer">
+        <div class="copyright">
+            <p><span>© Your Site Name</span>, All Right Reserve.</p>
+            <p>Designed By <span> HTML Codex</span> Distributed By <span>ThemeWagon</span></p>
+        </div>
+    </div>
+    <script>
+        var navbar = document.getElementById("navbar")
+        function openmenu() {
+            navbar.style.right = "0";
+        }
+        function closemenu() {
+            navbar.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

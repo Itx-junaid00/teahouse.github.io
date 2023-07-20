@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="product.css">
+    <script src="https://kit.fontawesome.com/293c5fd9e5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="nav">
+        <div class="container">
+            <div>
+                <nav class="last" >
+                    <img src="img/logo.png" class="logo">
+                    <ul id="navbar">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/product.html">Products</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                        <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div id="Home"></div>
+              <!-- product -->
+<div class="product">
+    <div class="mid">
+        <div class="front">
+            <h4>Products</h4>
+            <h1>Tea has a complex positive effect <br>on the body</h1>
+        </div>
+        <div>
+            <nav>
+                <ul>
+                    <li>
+                        <img src="img/product-1.png" alt="">
+                        <span>
+                            <h5>Green Tea</h5>
+                            <p>Lorem ipsum dolor sit<br>  amet consectetur adipisicing <br>elit. Qui, earum.</p>
+                        </span>
+                    </li>
+                    <li>
+                        <img src="img/product-2.png" alt="">
+                        <span>
+                            <h5>Organic Tea</h5>
+                            <p>Lorem ipsum dolor sit<br> amet consectetur adipisicing <br>elit. Qui, earum.</p>
+                        </span>
+                    </li>
+                    <li>
+                        <img src="img/product-3.png" alt="">
+                        <span>
+                            <h5>Spiced Tea</h5>
+                            <p>Lorem ipsum dolor sit<br>  ametconsectetur  adipisicing <br>elit. Qui, earum.</p>
+                        </span>
+                    </li>
+                    <li>
+                        <img src="img/product-4.png" alt="">
+                        <span class="">
+                            <h5>Black Tea</h5>
+                            <p>Lorem ipsum dolor sit <br> amet consectetur adipisicing <br>elit. Qui, earum.</p>
+                        </span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+<!-- footer -->
+<div class="footer">
+    <div class="copyright">
+        <p><span>© Your Site Name</span>, All Right Reserve.</p>
+        <p>Designed By <span> HTML Codex</span> Distributed By <span>ThemeWagon</span></p>
+    </div>
+    <script>
+        var navbar = document.getElementById("navbar")
+        function openmenu() {
+            navbar.style.right = "0";
+        }
+        function closemenu() {
+            navbar.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
